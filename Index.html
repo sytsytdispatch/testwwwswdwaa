@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Webhook Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Webhook Tester</h1>
+        <div class="webhook-url">
+            <p>Your Webhook URL:</p>
+            <input type="text" id="webhook-url" value="https://your-server.com/webhook" readonly>
+            <button onclick="copyURL()">Copy</button>
+        </div>
+        <div class="events">
+            <h2>Received Events</h2>
+            <ul id="event-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
